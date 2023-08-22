@@ -1,11 +1,12 @@
 class TasksController < ApplicationController
+  # método "set_task" define as ações que vão ser executadas em primeiro (before_action)dentro de cada método
   before_action :set_task, only: %i[show edit update destroy]
   def index
     @tasks = Task.all
   end
 
   def show
-     # método apagado por conta da refatoração - linha 51
+    # método apagado por conta da refatoração - linha 51
     # @task = Task.find(params[:id])
   end
 
@@ -21,12 +22,12 @@ class TasksController < ApplicationController
   end
 
   def edit
-     # método apagado por conta da refatoração - linha 51
+    # método apagado por conta da refatoração - linha 51
     # @task = Task.find(params[:id])
   end
 
   def update
-     # método apagado por conta da refatoração - linha 51
+    # método apagado por conta da refatoração - linha 51
     # @task = Task.find(params[:id])
     @task.update(task_params)
 
